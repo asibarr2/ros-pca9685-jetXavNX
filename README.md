@@ -22,7 +22,7 @@ Most of the configuration for your PCA9685 will be located in **src/pca9685_acti
 ## Is your PCA9685 communicating with I2C?
 On the Jetson Xavier, your SDA and SCL pins will connected to Bus 1 of I2C. If you did not wire to the specified SDA/SCL pins above, your PCA9685 module will not work. To check if your address is being read, type in terminal:
 
-  **sudo i2cdetect -r -y 1**
+  __**sudo i2cdetect -r -y 1**__
 
 and you should see a 40 output in the following image: 
 ![Correct I2C Address](./pwm_pca9685/images/i2c.png)
@@ -31,4 +31,9 @@ and you should see a 40 output in the following image:
 If not, you need to check your wiring again.
 
 ## Understanding the parameters
-To understand the parameters and setup, I will send you to this link: https://github.com/dheera/ros-pwm-pca9685 Dheera is the owner of the code and deserves credit, give him a follow as well if this helped you. 
+To understand the parameters and setup, I will send you to this link: https://github.com/dheera/ros-pwm-pca9685 Dheera is the owner of the code and deserves credit, give him a follow as well if this helped you.
+
+##Running in ROS
+After building your package, execute the following line which will publish a **/command** topic:
+
+**
