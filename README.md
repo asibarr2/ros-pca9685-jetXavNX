@@ -41,3 +41,14 @@ After building and sourcing your package and running **roscore**, execute the fo
 Please reference  https://github.com/dheera/ros-pwm-pca9685 to understand the parameters. Use the following to publish commands to the **/command** topic and test your servos. In my configuration, I have the driving servo connected to Channel 0 and steering servo connected to Channel 1. This is only an example for my configuration and how I setup my channels, use this as a reference:
 
 **rostopic pub -1 /command std_msgs/Int32MultiArray -- '{data: [5500,7800,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}'**
+
+## FOR DONKEY CAR MODELS ONLY, OTHER SETUPS DIFFER
+Here is my setup for Duty Cycles on the Donkey Car. I have Channel 0 as driving and Channel 1 as steering. You can connect your servos however you want, but I just prefer it this way:
+
+#### Channel 1 (Steering) :
+
+| Duty Cycle | Action |
+|------------------|------------------|
+| 7600     |  Left (Max)           |
+| 5500      | Center           |
+| 2800 | Right(Max)  |
