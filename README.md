@@ -14,7 +14,7 @@ Ensure that the pins above are wired correctly to the PCA9685.
 
 Most of the configuration for your PCA9685 will be located in **src/pca9685_activity.cpp** It is recommended to keep the default address at 0x40. On the Jetson Xavier, your SDA and SCL pins will connected to Bus 1 of I2C. If you did not wire to the specified SDA/SCL pins above, your PCA9685 module will not work. To check if your address is being read, type in terminal:
 
-**sudo i2cdetect -r -y 1**
+  **sudo i2cdetect -r -y 1**
 
 and you should see a 40 output in the following image: 
 
