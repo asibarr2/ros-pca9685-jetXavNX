@@ -19,12 +19,13 @@ Most of the configuration for your PCA9685 will be located in **src/pca9685_acti
 ### Change the frequency of Servo to 50 HZ
 If you happen to have issues, go to **src/pca9685_activity.cpp** and change  
 
+### Is your board being detected?
 On the Jetson Xavier, your SDA and SCL pins will connected to Bus 1 of I2C. If you did not wire to the specified SDA/SCL pins above, your PCA9685 module will not work. To check if your address is being read, type in terminal:
 
   **sudo i2cdetect -r -y 1**
 
 and you should see a 40 output in the following image: 
-
+![alt text](https://github.com/asibarr2/[ros-pca9685-jetXavNX/pwm_pca9685/images/frequencyServo.png?raw=true)
 
 
 If not, you need to check your wiring again.
