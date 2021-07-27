@@ -22,18 +22,22 @@ Most of the configuration for your PCA9685 will be located in **src/pca9685_acti
 ## Is your PCA9685 communicating with I2C?
 On the Jetson Xavier, your SDA and SCL pins will connected to Bus 1 of I2C. If you did not wire to the specified SDA/SCL pins above, your PCA9685 module will not work. To check if your address is being read, type in terminal:
 
-  __**sudo i2cdetect -r -y 1**__
+**sudo i2cdetect -r -y 1**
 
 and you should see a 40 output in the following image: 
 ![Correct I2C Address](./pwm_pca9685/images/i2c.png)
-
 
 If not, you need to check your wiring again.
 
 ## Understanding the parameters
 To understand the parameters and setup, I will send you to this link: https://github.com/dheera/ros-pwm-pca9685 Dheera is the owner of the code and deserves credit, give him a follow as well if this helped you.
 
-##Running in ROS
-After building your package, execute the following line which will publish a **/command** topic:
+## Running in ROS
+After building and sourcing your package and running **roscore**, execute the following line, in a seperate terminal, which will publish a **/command** topic:
 
-**
+**rosrun pwm_pca9685 pca9685_node**
+
+## Testing the motors
+Please reference  https://github.com/dheera/ros-pwm-pca9685 to understand the parameters. Use the following to publish commands to the **/command** topic and test your servos. In my configuration, I have the driving servo connected to Channel 0 and steering servo connected to Channel 1:
+
+**rostopic pub -1 /command std_msgs/Int32MultiArray -- '{data: [5500,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}'**
