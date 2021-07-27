@@ -25,7 +25,7 @@ On the Jetson Xavier, your SDA and SCL pins will connected to Bus 1 of I2C. If y
   **sudo i2cdetect -r -y 1**
 
 and you should see a 40 output in the following image: 
-![Correct I2C Address](./pwm_pca9685/images/frequencyServo.png)
+![Correct I2C Address](./pwm_pca9685/images/i2c.png)
 
 
 If not, you need to check your wiring again.
