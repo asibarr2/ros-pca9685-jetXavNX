@@ -38,6 +38,6 @@ After building and sourcing your package and running **roscore**, execute the fo
 **rosrun pwm_pca9685 pca9685_node**
 
 ## Testing the motors
-Please reference  https://github.com/dheera/ros-pwm-pca9685 to understand the parameters. Use the following to publish commands to the **/command** topic and test your servos. In my configuration, I have the driving servo connected to Channel 0 and steering servo connected to Channel 1:
+Please reference  https://github.com/dheera/ros-pwm-pca9685 to understand the parameters. Use the following to publish commands to the **/command** topic and test your servos. In my configuration, I have the driving servo connected to Channel 0 and steering servo connected to Channel 1. This is only an example for my configuration and how I setup my channels, use this as a reference:
 
 **rostopic pub -1 /command std_msgs/Int32MultiArray -- '{data: [5500,7800,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}'**
