@@ -3,7 +3,7 @@ This is the PCA9685 package for the ROS Melodic using the Jetson Xavier NX using
 projects.
 
 ## Donkey Car Enthusiasts
-I have not used the Donkey Car App for this configuration, but I have made this board compatible with Jetson Xavier if you would like to customize your robot in ROS.
+I have not used the Donkey Car App for this configuration, but I have made this board compatible with Jetson Xavier if you would like to customize your Donkey Car using ROS.
 
 ## Pinout
 In order to configure the package correctly, follow the correct pinout for wiring the PCA9685 to the Jetson Xavier NX. Here is a reference pinout for your convenience: https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/
