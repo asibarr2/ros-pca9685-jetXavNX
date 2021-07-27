@@ -49,6 +49,7 @@ Here is my setup for Duty Cycles on the Donkey Car. I have Channel 0 as driving 
 | Duty Cycle | Action |
 |------------------|------------------|
 | 5550 | Activate the Motor/Stop |
+| 5800 | Minimum Forward Speed|
 | 7800 | Max Forward Speed|
 
 **You must activate the motor first in order to drive, you will hear a beep when you run the duty cycle correctly*
