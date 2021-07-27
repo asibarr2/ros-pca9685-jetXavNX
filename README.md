@@ -45,6 +45,14 @@ Please reference  https://github.com/dheera/ros-pwm-pca9685 to understand the pa
 ## FOR DONKEY CAR MODELS ONLY, OTHER SETUPS DIFFER
 Here is my setup for Duty Cycles on the Donkey Car. I have Channel 0 as driving and Channel 1 as steering. You can connect your servos however you want, but I just prefer it this way:
 
+#### Channel 0 (Driving) :
+| Duty Cycle | Action |
+|------------------|------------------|
+| 5550 | Activate the Motor/Stop |
+| 7800 | Max Forward Speed|
+
+**You must activate the motor first in order to drive, you will hear a beep when you run the duty cycle correctly*
+
 #### Channel 1 (Steering) :
 
 | Duty Cycle | Action |
