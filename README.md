@@ -40,4 +40,4 @@ After building and sourcing your package and running **roscore**, execute the fo
 ## Testing the motors
 Please reference  https://github.com/dheera/ros-pwm-pca9685 to understand the parameters. Use the following to publish commands to the **/command** topic and test your servos. In my configuration, I have the driving servo connected to Channel 0 and steering servo connected to Channel 1:
 
-**rostopic pub -1 /command std_msgs/Int32MultiArray -- '{data: [5500,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}'**
+**rostopic pub -1 /command std_msgs/Int32MultiArray -- '{data: [5500,7800,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}'**
