@@ -10,3 +10,7 @@ In order to configure the package correctly, follow the correct pinout for wirin
 | Pin 27 - SDA (I2C Bus 1) | SDA     |
 | Pin 28 - SCL (I2C Bus 1) | SCL     |
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
