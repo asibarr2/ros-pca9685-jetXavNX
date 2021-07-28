@@ -54,6 +54,8 @@ Here is my setup for Duty Cycles on the Donkey Car. I have Channel 0 as driving 
 
 **You must activate the motor first in order to drive, you will hear a beep when you run the duty cycle correctly*
 
+**I am still figuring out how to drive the vehicle backwards, if you have any updates or issues. Feel free to post in issues or contact me on Discord @RinzlerLegacy in the Donkey Car Channel: https://discord.com/invite/PN6kFeA**
+
 #### Channel 1 (Steering) :
 
 | Duty Cycle | Action |
